@@ -1,0 +1,9 @@
+# 其余文本交给 Git 按平台自动处理（放在最前，专用规则覆盖它）
+* text=auto
+
+# libxposed 模块清单必须保持 LF。
+# 若被转成 CRLF，java_init.list 里的类名会带上 \r，
+# 框架按字符串查找入口类时抛 ClassNotFoundException。
+# 注意：同一文件命中多条规则时，后面的规则优先，所以这两条必须放在 * text=auto 之后。
+*.list text eol=lf
+*.prop text eol=lf

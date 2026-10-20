@@ -1,0 +1,23 @@
+*.iml
+.gradle
+/local.properties
+/build
+/captures
+.externalNativeBuild
+.cxx
+.DS_Store
+
+# IDE 配置（个人项目整目录忽略；若要与团队共享代码风格，改为只忽略
+# /.idea/caches、/.idea/libraries、/.idea/workspace.xml 等易变文件）
+/.idea/
+
+# 签名文件，勿提交
+keystore.properties
+*.jks
+*.keystore
+
+# 构建产物：Android Studio Generate Signed APK 默认输出到 app/release
+/app/release/
+
+# 本地 AI/协作说明，不属于模块发布内容
+/CLAUDE.md

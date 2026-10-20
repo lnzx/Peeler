@@ -1,0 +1,12 @@
+[versions]
+agp = "9.4.1"
+api = "102.0.0"
+annotation = "1.11.0"
+
+[libraries]
+api = { module = "io.github.libxposed:api", version.ref = "api" }
+annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
